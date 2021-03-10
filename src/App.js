@@ -1,8 +1,13 @@
-export default () => {
+import React from 'react';
+import Book from './components/Book';
+
+const App = () => {
 
     return (
         <div>
-            hello World!
+            <Book />
         </div>
     );
 };
+
+export default App;
