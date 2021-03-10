@@ -1,13 +1,17 @@
 import React from 'react';
 import Book from './components/Book';
 
-const App = () => {
+class App extends React.Component {
 
-    return (
-        <div>
-            <Book />
-        </div>
-    );
+    render() {
+        return (
+            <div>
+                <Book
+                    value='Viadge a la lluna'
+                />
+            </div>
+        )
+    };
 };
 
 export default App;

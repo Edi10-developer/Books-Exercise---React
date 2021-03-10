@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Book  = () => {
-    return (
-        <div>
-            <h1>Viatge a la lluna</h1>
-        </div>
-    )
+class Book extends React.Component {
+    
+    render() {
+        return (
+            <div>
+                <h1>{this.props.value}</h1>
+            </div>
+
+        )
+    }
 }
 export default Book;
