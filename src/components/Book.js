@@ -16,9 +16,9 @@ class Book extends React.Component {
                 <h2>Titles:</h2>
                 <ul>
                     {titles.map((title, index) => // From titles array
-                        <li key={index}>{title}</li> // Create a <li> element with the index and the title
-                    )}
-                </ul>
+                        <li key={index}>{title}</li> // Create a <li> element with the index and the title - p.s. I've tried withouth key={} but is not working, we MUST declare the KEY
+                    )} 
+                </ul> 
                 <h2>Authors:</h2>
                 <ul>
                     {authors.map((author, index) => // From authors array
